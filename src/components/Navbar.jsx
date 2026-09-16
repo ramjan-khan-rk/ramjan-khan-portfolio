@@ -13,15 +13,28 @@ function Navbar() {
         <a href="#contact">Contact</a>
       </nav>
 
-      <div className="navbar-socials">
-        <a href="#" aria-label="GitHub">
-          GH
-        </a>
+     ```jsx
+<div className="navbar-socials">
+  <a
+    href="https://github.com/ramjan-khan-rk"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+  >
+    GH
+  </a>
 
-        <a href="#" aria-label="LinkedIn">
-          in
-        </a>
-      </div>
+  <a
+    href="https://www.linkedin.com/in/ramjan-khan"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    in
+  </a>
+</div>
+```
+
     </header>
   );
 }
