@@ -25,7 +25,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://github.com/YOUR_USERNAME"
+            href="https://github.com/ramjan-khan-rk"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -34,7 +34,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/YOUR_USERNAME/"
+            href="https://www.linkedin.com/in/ramjan-khan/"
             target="_blank"
             rel="noopener noreferrer"
           >
