@@ -13,7 +13,7 @@ function Navbar() {
         <a href="#contact">Contact</a>
       </nav>
 
-     ```jsx
+     
 <div className="navbar-socials">
   <a
     href="https://github.com/ramjan-khan-rk"
@@ -33,7 +33,6 @@ function Navbar() {
     in
   </a>
 </div>
-```
 
     </header>
   );
