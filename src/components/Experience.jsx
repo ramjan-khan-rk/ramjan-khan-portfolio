@@ -1,31 +1,31 @@
 function Experience() {
   const experiences = [
     {
-      period: "EDUCATION",
-      title: "Mathematics Educator",
-      organization: "Schools & JEE Main Foundation Programs",
-      duration: "~5 YEARS",
+      period: "Education",
+      title: "Mathematics educator",
+      organization: "Schools and JEE Main foundation programs",
+      duration: "About 5 years",
       description:
-        "Experienced mathematics educator with approximately five years of teaching experience across school education and JEE Main foundation-level programs. Focused on building strong conceptual foundations, analytical thinking, and problem-solving skills in students.",
+        "Taught mathematics across school education and JEE Main foundation programs. The work was conceptual foundations, analytical thinking, and problem solving — explaining hard ideas until they clicked.",
       highlights: [
-        "Mathematics Education",
-        "JEE Main Foundation",
-        "Conceptual Learning",
-        "Problem Solving",
+        "Mathematics education",
+        "JEE Main foundation",
+        "Conceptual learning",
+        "Problem solving",
       ],
     },
     {
-      period: "FOUNDER",
-      title: "Founder & Mathematics Educator",
-      organization: "Devine — Independent Mathematics Coaching",
-      duration: "~3 YEARS",
+      period: "Founder",
+      title: "Founder and mathematics educator",
+      organization: "Devine — independent mathematics coaching",
+      duration: "About 3 years",
       description:
-        "Founded and independently operated Devine, a mathematics coaching institute, taking responsibility for teaching, student guidance, planning, and day-to-day operations. The institute reached a peak enrollment of 57 students.",
+        "Founded and ran Devine, a mathematics coaching institute. Teaching, student guidance, planning, and day-to-day operations sat in one place. Peak enrollment was 57 students.",
       highlights: [
-        "Founded & Managed Institute",
-        "57 Students at Peak",
-        "Mathematics Education",
-        "Student Management",
+        "Founded and managed the institute",
+        "57 students at peak",
+        "Mathematics education",
+        "Student management",
       ],
       location: "https://maps.app.goo.gl/YHL6oBtrFiUXgfmb6",
     },
@@ -34,40 +34,33 @@ function Experience() {
   return (
     <section id="experience" className="section experience">
       <div className="section-heading">
-        <p className="section-label">04 — EXPERIENCE</p>
-
+        <p className="section-label">04 — Experience</p>
         <h2>
-          Experience
+          Years of teaching,
           <br />
-          beyond code.
+          then building.
         </h2>
+        <p className="section-intro">
+          Before software, I spent years teaching mathematics and running my own
+          coaching institute. That is where the patience for hard problems came from.
+        </p>
       </div>
 
       <div className="experience-list">
         {experiences.map((experience) => (
           <article className="experience-card" key={experience.title}>
-            <div className="experience-period">
-              {experience.period}
-            </div>
+            <div className="experience-period">{experience.period}</div>
 
             <div className="experience-content">
               <div className="experience-top">
                 <div>
                   <h3>{experience.title}</h3>
-
-                  <p className="experience-organization">
-                    {experience.organization}
-                  </p>
+                  <p className="experience-organization">{experience.organization}</p>
                 </div>
-
-                <span className="experience-duration">
-                  {experience.duration}
-                </span>
+                <span className="experience-duration">{experience.duration}</span>
               </div>
 
-              <p className="experience-description">
-                {experience.description}
-              </p>
+              <p className="experience-description">{experience.description}</p>
 
               <div className="experience-highlights">
                 {experience.highlights.map((highlight) => (
@@ -82,7 +75,7 @@ function Experience() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View location ↗
+                  View Devine on Maps
                 </a>
               )}
             </div>

@@ -1,62 +1,39 @@
-
 function Skills() {
   const skillGroups = [
     {
       title: "Frontend",
-      skills: [
-        "React",
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Responsive UI",
-      ],
+      note: "Interfaces people can move through without thinking.",
+      skills: ["React", "JavaScript", "HTML", "CSS", "Responsive UI"],
     },
     {
       title: "Backend",
-      skills: [
-        "Node.js",
-        "Express.js",
-        "REST APIs",
-        "Authentication",
-        "API Integration",
-      ],
+      note: "APIs, auth, and the rules a product actually runs on.",
+      skills: ["Node.js", "Express.js", "REST APIs", "Authentication", "API Integration"],
     },
     {
       title: "Databases",
-      skills: [
-        "MongoDB",
-        "Prisma",
-        "SQL",
-        "Database Design",
-      ],
+      note: "Models that match how the product works.",
+      skills: ["MongoDB", "Prisma", "SQL", "Database Design"],
     },
     {
       title: "Mobile",
-      skills: [
-        "Flutter",
-        "Dart",
-        "Android",
-        "Real-time Features",
-      ],
+      note: "Apps with live features, not static screens.",
+      skills: ["Flutter", "Dart", "Android", "Real-time Features"],
     },
     {
-      title: "Tools & Workflow",
-      skills: [
-        "Git",
-        "GitHub",
-        "VS Code",
-        "Postman",
-        "npm",
-      ],
+      title: "Tools",
+      note: "The everyday kit for building and checking the work.",
+      skills: ["Git", "GitHub", "VS Code", "Postman", "npm"],
     },
     {
-      title: "Product Development",
+      title: "Product",
+      note: "Systems with more than one kind of user.",
       skills: [
-        "Full-Stack Applications",
-        "Admin Dashboards",
-        "E-commerce Systems",
-        "Mobile Applications",
-        "Backend Systems",
+        "Full-stack applications",
+        "Admin dashboards",
+        "E-commerce systems",
+        "Mobile applications",
+        "Backend systems",
       ],
     },
   ];
@@ -64,26 +41,26 @@ function Skills() {
   return (
     <section id="skills" className="section skills">
       <div className="section-heading">
-        <p className="section-label">03 — SKILLS</p>
-
+        <p className="section-label">03 — Skills</p>
         <h2>
-          Tools I use
+          The stack behind
           <br />
-          to build.
+          the products.
         </h2>
       </div>
 
       <div className="skills-grid">
-        {skillGroups.map((group) => (
-          <div className="skill-group" key={group.title}>
+        {skillGroups.map((group, index) => (
+          <article className="skill-group" key={group.title}>
+            <p className="skill-index">0{index + 1}</p>
             <h3>{group.title}</h3>
-
+            <p className="skill-note">{group.note}</p>
             <div className="skill-list">
               {group.skills.map((skill) => (
                 <span key={skill}>{skill}</span>
               ))}
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </section>
